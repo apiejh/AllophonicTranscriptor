@@ -1,0 +1,45 @@
+﻿.subhead {
+padding-top: 10px;
+margin-bottom: 20px;
+background-color: #252525;
+color: white;
+-webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+box-shadow: 7 1px 10px rgba(0, 0, 0, 0.1);
+}
+.example {
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
+}
+.text-to-transcribe {
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
+    font-size: 2em;
+}
+input[type="text"] {
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
+	max-width: 400px;
+}
+.ipa-buttons {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+    background: none repeat scroll 0 0 #F3F3F3;
+    border-color: #CCCCCC;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+}
+.ipa-buttons .group {
+    display: inline-block;
+    padding: 5px 5px;
+}
+.ipa-buttons button {
+    font-family: "Charis SIL", "Doulos SIL"; 
+    font-size: 20px;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 1px;
+    line-height: 1em;
+    padding: 0px;
+}
+#form {
+	margin: 0;
+}
