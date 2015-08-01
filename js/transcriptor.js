@@ -1,1 +1,1176 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('$("#2p").2n(o(){y 1N=["p","b","b̥","t","tˡ","d","dˡ","d̥","k","k̟","k̠","ɡ","ɡ̥","ɡ̟","ɡ̠","f","v","v̥","θ","ð","ð̥","s","z","z̥","ʃ","ʒ","ʒ̥","h","ʧ","ʤ","ʤ̥","m","n","ŋ","r","ɹ̥","l","l̥","ɫ","j","j̥","w"];y 1L=["p","b","b̥","t","d","d̥","k","k̟","ɡ","ɡ̥","ɡ̟","ɡ̠","f","v","v̥","θ","ð","s","z","z̥","ʃ","ʒ","ʒ̥","h","ʧ","ʤ","ʤ̥"];y 1T=["p","t","k","f","θ","s","ʃ","h","ʧ","t̚","p̚","k̚"];y 22=["b","d","ɡ","v","ð","z","ʒ","ʤ"];y 2h=["p","b","t","d","k","ɡ","d̥","t̠","d̠","d̥̠","pʲ","t","t̠","tʲ","k","kʲ","tⁿ","k̚","t̚","p̚","k̟","k̠","tʷ","kʷ","pʷ"];y 1X=["p","pʲ","t","t̠","tʲ","k","kʲ","tⁿ","k̚","t̚","p̚","k̟","k̠","tʷ","kʷ","pʷ","tˡ","pⁿ","kⁿ"];y 1Y=["b","d","ɡ"];y 2a=["p","b"];y 21=["t","d","d̥","t̠","d̠","d̥̠"];y 2b=["k","ɡ","ɡ̥"];y 1Z=["p","b","m"];y 26=["t","d","d̥","n","l"];y 20=["k","ɡ","ŋ"];y 27=["θ","ð"];y 25=["f","v"];y 2r=["ʧ","ʤ"];y 2k=["ɹ","l","l̴","l̴̩","w","j"];y 2m=["ɹ","l","w","j","m","n","ŋ"];y 2j=["m","n","ŋ"];y 2d=["ɪ","e","æ","ʌ","ʊ","ɒ","i","ɔ","ɑ","ɜ","u","ə","ɪ̃","ẽ","æ̃","ʌ̃","ʊ̃","ɒ̃","ĩ","ɔ̃","ɑ̃","ɜ̃","ũ","ə̃","ə̥","a","ʉ","ʉ̃","æ̆","ɪ̆","ĕ","ʌ̆","ɒ̆","ʊ̆","ə̆"];y 2c=["ɪ","e","æ","ʌ","ʊ","ɒ","ə","ɪ̃","ẽ","æ̃","ʌ̃","ʊ̃","ɒ̃","ə̃","ə̥","ɪ̆","ĕ","æ̆","ʌ̆","ʊ̆","ɒ̆"];y 2f=["ɪ","e","æ","ʌ","i","ɪ̃","ẽ","æ̃","ʌ̃","ĩ"];y 2g=["ɪ","i","ɪ̃","ĩ","ɪ̆"];y 2e=["ɒ","ɑ","ɒ̃","ɑ̃","ɒ̆"];y 1G=["ɒ","ɔ","ʊ","u","ɒ̃","ɔ̃","ʊ̃","ũ","ʉ","ʉ̃","ʊ̆","ɒ̆"];y 1D=["ː","ˑ"];y 1A=["ˈ","ˌ"];y 1B=[".",","];y 1E=[","];y 1C=["ʲ","ʷ","ⁿ"];y x=$("#1t").1x();y C="";o M(5){6(1N.D(5)!=-1){9 F}7{9 E}}o Y(5){6(1L.D(5)!=-1){9 F}7{9 E}}o G(5){6(1T.D(5)!=-1){9 F}7{9 E}}o 1S(5){6(22.D(5)!=-1){9 F}7{9 E}}o W(5){6(2h.D(5)!=-1){9 F}7{9 E}}o 1d(5){6(2a.D(5)!=-1){9 F}7{9 E}}o O(5){6(21.D(5)!=-1){9 F}7{9 E}}o 12(5){6(2b.D(5)!=-1){9 F}7{9 E}}o X(5){6(20.D(5)!=-1){9 F}7{9 E}}o R(5){6(1Z.D(5)!=-1){9 F}7{9 E}}o T(5){6(1X.D(5)!=-1){9 F}7{9 E}}o 2v(5){6(1Y.D(5)!=-1){9 F}7{9 E}}o 1M(5){6(27.D(5)!=-1){9 F}7{9 E}}o 1V(5){6(25.D(5)!=-1){9 F}7{9 E}}o 1U(5){6(26.D(5)!=-1){9 F}7{9 E}}o 10(5){6(2k.D(5)!=-1){9 F}7{9 E}}o Q(5){6(2j.D(5)!=-1){9 F}7{9 E}}o 1k(5){6(2m.D(5)!=-1){9 F}7{9 E}}o N(5){6(2d.D(5)!=-1){9 F}7{9 E}}o 1O(5){6(2c.D(5)!=-1){9 F}7{9 E}}o 1o(5){6(2e.D(5)!=-1){9 F}7{9 E}}o Z(5){6(2f.D(5)!=-1){9 F}7{9 E}}o 1j(5){6(2g.D(5)!=-1){9 F}7{9 E}}o 1H(5){6(1G.D(5)!=-1){9 F}7{9 E}}o U(5){6(1D.D(5)!=-1){9 F}7{9 E}}o A(5){6(1A.D(5)!=-1){9 F}7{9 E}}o J(5){6(1B.D(5)!=-1){9 F}7{9 E}}o 2s(5){6(1E.D(5)!=-1){9 F}7{9 E}}o 1n(5){6(1C.D(5)!=-1){9 F}7{9 E}}o 28(){6($("#1t").1x().D(" "||"	")!=-1){9 F}7{9 E}}o 1P(){o 1W(){x=x.K(/\\s+/g,",");x=x.K(/\\//g,"");x=x.K(/|/g,"")}o 1F(){x=x.K(/ᵊl/g,"l̩");x=x.K(/ᵊn/g,"n̩")}o 1I(){x=x.K(/tʃ/g,"ʧ");x=x.K(/dʒ/g,"ʤ");x=x.K(/r/g,"ɹ")}o 15(){6(Y(5)&&c==="j"){5+="ʲ"}7 6(Y(5)&&J(c)&&q==="j"){5+="ʲ"}7 6(Y(5)&&A(c)&&q==="j"){5+="ʲ"}7 6(Y(5)&&J(c)&&A(q)&&L==="j"){5+="ʲ"}7 6(Q(5)){6(c==="j"){5+="ʲ"}7 6(A(c)&&q==="j"){5+="ʲ"}7 6(A(J(c)&&q)&&L==="j"){5+="ʲ"}7 6(c==="ɪ"&&q==="ə"){5+="ʲ"}7 6(J(c)&&A(q)&&L==="ɪ"&&2i==="ə"){5+="ʲ"}7{9 5}}7{9 5}}o 1q(){6(W(5)){6(W(c)){5+="̚"}7 6(J(c)&&W(q)){5+="̚"}7 6(A(c)&&W(q)){5+="̚"}7 6(J(c)&&A(q)&&W(L)){5+="̚"}7{9 5}}7{9 5}}o 1m(){6(1S(5)){6(i===0||i===x.V-1){5+="̥"}7 6(G(B)||G(c)){5+="̥"}7 6(J(B)&&G(P)){5+="̥"}7 6(J(c)&&G(q)){5+="̥"}7 6(A(c)&&G(q)){5+="̥"}7 6(J(c)&&A(q)&&G(L)){5+="̥"}7 6(A(B)&&G(P)){5+="̥"}7 6(A(B)&&J(P)&&G(11)){5+="̥"}7 6(A(B)&&i===1){5+="̥"}7{9 5}}7 6(10(5)&&T(B)){6(P==="ˈ"||i===1){5+="̥"}7{9 5}}7 6(10(5)&&J(B)&&T(P)){6(P==="ˈ"||i===1){5+="̥"}7{9 5}}7 6(10(5)&&1n(B)&&T(P)){6(11==="ˈ"||i===2){5+="̥"}7{9 5}}7 6(10(5)&&1n(B)&&J(P)&&T(11)){6(11==="ˈ"||i===2){5+="̥"}7{9 5}}7 6(Q(5)&&B==="s"){5+="̥"}7 6(5==="ə"){6(i===0){9 5}7 6(G(B)&&G(c)){5+="̥"}7 6(G(P)&&J(B)&&G(c)){5+="̥"}7 6(G(B)&&J(c)&&G(q)){5+="̥"}7 6(G(B)&&A(c)&&G(q)){5+="̥"}7 6(G(B)&&J(c)&&A(q)&&G(L)){5+="̥"}7 6(G(P)&&J(B)&&A(c)&&G(L)){5+="̥"}7{9 5}}7{9 5}}o 1e(){6(T(5)&&N(c)){6(i===0&&x.D("ˈ")===-1){5+="ʰ"}7 6(B==="ˈ"){5+="ʰ"}7{9 5}}}o 1c(){6(T(5)){6(i===0){9 5}6(N(B)||U(B)||1k(B)){6(M(c)||i===x.V-1){5="ʔ"+5}7 6(A(c)&&M(q)){5="ʔ"+5}7 6(J(c)&&A(q)&&M(L)){5="ʔ"+5}7{9 5}}7{9 5}}7 6(5==="ʧ"){6(N(B)||U(B)||1k(B)){5="ʔ"+5}7{9 5}}7{9 5}}o 1b(){6(O(5)&&c==="ɹ"){5+="͜"}7 6(5==="ʔt"&&c==="s"){5="ʔt͜"}7 6(5==="t"&&c==="s"){5+="͜"}7 6(5==="d"&&c==="z"){5+="͜"}}o 2l(){6(5==="l"&&M(B)&&i===x.V-1){5+="̩"}7 6(5==="ɫ"&&M(B)&&i===x.V-1){5+="̩"}7 6(Q(5)&&i===x.V-1&&Y(B)){5+="̩"}7{9 5}}o 16(){6(5==="ː"&&G(c)){5="ˑ"}7 6(1O(5)&&G(c)){5+="̆"}7{9 5}}o 1r(){6(!A(c)&&!N(c)&&c!=="j"){6(5==="l"){5="ɫ"}6(5==="l̪"){5="ɫ̪"}7 6(5==="l̩"){5="l̴̩"}7{9 5}}7 6(J(c)&&!A(q)&&!N(q)&&q!=="j"){6(5==="l"){5="ɫ"}6(5==="l̪"){5="ɫ̪"}7 6(5==="l̩"){5="l̴̩"}7{9 5}}7 6(J(c)&&A(q)&&!N(L)&&L!=="j"){6(5==="l"){5="ɫ"}6(5==="l̪"){5="ɫ̪"}7 6(5==="l̩"){5="l̴̩"}7{9 5}}7 6(A(c)&&!N(q)&&q!=="j"){6(5==="l"){5="ɫ"}6(5==="l̪"){5="ɫ̪"}7 6(5==="l̩"){5="l̴̩"}7{9 5}}7{9 5}}o 19(){6(B==="j"){6(5==="u"){5="ʉ"}7 6(5==="ũ"){5="ʉ̃"}}7 6(!N(L)&&U(c)){6(Z(5)&&q==="l"){5+="̈"}7 6(Z(5)&&q==="l̩"){5+="̈"}7{9 5}}7 6(!N(q)){6(Z(5)&&c==="l"){5+="̈"}7 6(Z(5)&&c==="l̩"){5+="̈"}7{9 5}}7{9 5}}o 1a(){6(M(5)&&5!=="w"&&c==="w"){5+="ʷ"}7 6(M(5)&&5!=="w"&&1H(c)){5+="ʷ"}7{9 5}}o 14(){6(1d(5)&&c==="m"){5+="ⁿ"}7 6(1d(5)&&A(c)&&q==="m"){5+="ⁿ"}7 6(O(5)&&c==="n"){5+="ⁿ"}7 6(O(5)&&A(c)&&q==="n"){5+="ⁿ"}7 6(O(5)&&c==="n̩"){5+="ⁿ"}7 6(O(5)&&A(c)&&q==="n̩"){5+="ⁿ"}7 6(12(5)&&c==="ŋ"){5+="ⁿ"}7{9 5}}o 18(){6(O(5)&&c==="l"){5+="ˡ"}7 6(O(5)&&A(c)&&q==="l"){5+="ˡ"}7{9 5}}o 1p(){6(O(5)&&c==="ɹ"){5+="̠"}7 6(12(5)&&1o(c)){5+="̠"}7 6(O(5)&&A(c)&&q==="ɹ"){5+="̠"}7 6(12(5)&&A(c)&&1o(q)){5+="̠"}7{9 5}}o 1s(){6(1U(5)&&1M(c)){5+="̪"}7{9 5}}o 1g(){6(12(5)){6(1j(c)||c==="j"){5+="̟"}7 6(A(c)){6(1j(q)||q==="j"){5+="̟"}7{9 5}}7{9 5}}7{9 5}}o 1f(){6(Q(5)&&1V(c)){5="ɱ"}7{9 5}}o 17(){6(N(5)){6(Q(c)){5+="̃"}7 6(U(c)&&Q(q)){5+="̃"}7 6(A(c)&&Q(q)){5+="̃"}7 6(U(c)&&U(q)&&Q(L)){5+="̃"}7{9 5}}7{9 5}}o 1w(){C=C.K(/ʔt͜s/g,"ʔs");C=C.K(/ʔtˡ/g,"ʔ");C=C.K(/ʔtⁿ/g,"ʔ");C=C.K(/ʔt/g,"ʔ");C=C.K(/ʔ̚/g,"ʔ")}o 1R(){C=C.K(/j̥/g,"j̊");C=C.K(/ɡ̥/g,"ɡ̊");C=C.K(/d͜z̥/g,"d͡z̥");C=C.K(/t̠͜ɹ̥/g,"t̠͡ɹ̥")}o 1y(){6($(\'#1y\').H(\'I\')){C=C.K(/,/g," ")}7{C=C.K(/,/g,"")}}o 1u(){6($(\'#1u\').H(\'I\')){C=C.K(/\\./g,"")}7{9 C}}o 1l(){6(5==="d̚"){6(X(c)){5="g̚"}7 6(R(c)){5="b̚"}7 6(A(c)){6(X(q)){5="g̚"}7 6(R(q)){5="b̚"}7{9 5}}7{9 5}}7 6(5==="t̚"){6(X(c)){5="k̚"}7 6(R(c)){5="p̚"}7 6(A(c)){6(X(q)){5="k̚"}7 6(R(q)){5="p̚"}7{9 5}}7{9 5}}7 6(5==="n"){6(R(c)){5="m"}7 6(A(c)&&R(q)){5="m"}7{9 5}}7{9 5}}o 1v(){6(5==="n"&&c==="̩"){6(X(B)){5="ŋ"}7 6(R(B)){5="m"}}7{9 5}}o 1z(){6(O(5)){6(M(B)&&M(c)&&c!=="h"&&c!=="j"){5=""}7 6(M(B)&&A(c)&&M(q)&&q!=="h"&&q!=="j"){5=""}7{9 5}}7{9 5}}1F();1I();1W();2I(i=0;i<x.V;i++){5=x.S(i,1);B=x.S(i-1,1);P=x.S(i-2,1);11=x.S(i-3,1);c=x.S(i+1,1);q=x.S(i+2,1);L=x.S(i+3,1);2i=x.S(i+4,1);2l();6($(\'#1m\').H(\'I\')){1m()}7{5=5}6($(\'#1q\').H(\'I\')){1q()}7{5=5}6($(\'#1p\').H(\'I\')){1p()}7{5=5}6($(\'#1s\').H(\'I\')){1s()}7{5=5}6($(\'#1g\').H(\'I\')){1g()}7{5=5}6($(\'#1r\').H(\'I\')){1r()}7{5=5}6($(\'#1f\').H(\'I\')){1f()}7{5=5}6($(\'#17\').H(\'I\')){17()}7{5=5}6($(\'#16\').H(\'I\')){16()}7{5=5}6($(\'#19\').H(\'I\')){19()}7{5=5}6($(\'#15\').H(\'I\')){15()}7{5=5}6($(\'#14\').H(\'I\')){14()}7{5=5}6($(\'#18\').H(\'I\')){18()}7{5=5}6($(\'#1a\').H(\'I\')){1a()}7{5=5}6($(\'#1e\').H(\'I\')){1e()}7{5=5}6($(\'#1c\').H(\'I\')){1c()}7{5=5}6($(\'#1b\').H(\'I\')){1b()}7{5=5}6($(\'#1l\').H(\'I\')){1l()}7{5=5}6($(\'#1v\').H(\'I\')){1v()}7{5=5}6($(\'#1z\').H(\'I\')){1z()}7{5=5}C+=5}6(x.V===0){$("#C").29(\'<p 24="13-23">2L 1Q 2M 13!</p>\')}6(28()){$("#C").29(\'<p 24="13-23">2V 2C 2W 2F 2E 2D 2z!</p>\')}7{6($(\'#1w\').H(\'I\')){1w()}7{5=5}1R();1y();1u();$("#C").13("["+C+"]")}}1P()});$(\'#1K\').1J(o(){y 1i=$("x#1t").1x();y 1h=2R 2O();$.2P({2A:"2U.2T",1Q:\'2S\',2K:"2J-8",2G:{1i:1i+" "+1h},2y:o(2x){2B.2Q("2N 2q 2o 2u 2t 2w "+1h)}})});$("#1K").1J(o(e){e.2H()});',62,183,'|||||segment|if|else||return|||nextSegment||||||||||||function||next2Segment|||||||input|var||isStressMark|previousSegment|result|indexOf|false|true|isFortisObstruent|attr|checked|isSyllableBoundary|replace|next3Segment|isConsonant|isVowel|isAlveolarPlosive|previous2Segment|isNasal|isBilabial|substr|isFortisPlosive|isLengthMark|length|isPlosive|isVelar|isObstruent|isFrontVowel|isApproximant|previous3Segment|isVelarPlosive|text|nasalPlosion|palatalisation|prefortisClipping|nasalisation|lateralPlosion|centralisation|labialisation|phoneticAffricates|glottaling|isBilabialPlosive|aspiration|labiodentalNasal|advancing|timestamp|queryValue|isCloseFrontVowel|isSonorant|POAAssimilation|devoicing|isSsSymbol|isOpenBackVowel|retraction|unreleased|velarisation|dentalisation|checkThis|removeDots|syllabicNasalPOAAssimilation|glottalReplacement|val|keepSpaces|elision|stressMarks|syllableBoundary|ssSymbols|lengthMarks|wordBoundary|removeSchwaBeforeSyllabic|roundedVowels|isRoundedVowel|replaceSymbols|submit|form|obstruents|isDentalFricative|consonants|isShortVowel|transcribe|type|devoicedSymbols|isLenisObstruent|fortisObstruents|isAlveolar|isLabiodentalFricative|removeSpaces|fortisPlosives|lenisPlosives|bilabials|velars|alveolarPlosives|lenisObstruents|error|class|labiodentalFricatives|alveolars|dentalFricatives|containsSpaces|html|bilabialPlosives|velarPlosives|shortVowels|vowels|backOpenVowels|frontVowels|closeFrontVowels|plosives|next4Segment|nasals|approximants|syllabicity|sonorants|click|has|target|query|affricates|isWordBoundary|saved|been|isLenisPlosive|at|msg|success|words|url|console|tool|single|with|only|data|preventDefault|for|utf|scriptCharset|Please|some|Your|Date|ajax|log|new|POST|php|get_query|This|works'.split('|'),0,{}))
+var consonants = "";
+var obstruents = "";
+var fortisObstruents = "";
+var lenisObstruents = "";
+var plosives = "";
+var fortisPlosives = "";
+var lenisPlosives = "";
+var bilabialPlosives = "";
+var alveolarPlosives = "";
+var velarPlosives = "";
+var	bilabials = "";
+var alveolars = "";
+var velars = "";
+var dentalFricatives = "";
+var labiodentalFricatives = "";
+var affricates = "";
+var approximants = "";
+var sonorants = "";
+var nasals = "";
+var vowels = "";
+var shortVowels = "";
+var frontVowels = "";
+var closeFrontVowels = "";
+var backOpenVowels = "";
+var roundedVowels = "";
+var schwas = "";
+var reducedVowels = "";
+var lengthMarks = "";
+var stressMarks = "";
+var syllableBoundary = "";
+var wordBoundary = "";
+var ssSymbols = "";
+var input = "";
+var result = "";
+var accent = "";
+var $accentSwitch = $("input:radio[name='accent']");
+
+function assignAccent() {
+	accent = $("input:radio[name='accent']:checked").val();
+	if (accent === "bre") {
+		$('.ame-trait').hide();
+		$('.ame-trait').prop('checked', false); 
+		$('.bre-trait').show();
+		$('.bre-trait').prop('checked', true); 
+	} else if (accent === "ame") {
+		$('.bre-trait').hide();
+		$('.bre-trait').prop('checked', false); 
+		$('.ame-trait').show();
+		$('.ame-trait').prop('checked', true); 
+	}
+}
+
+function assignSegments() {
+	if (accent == "bre") {
+		consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
+		obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
+		fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
+		lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
+		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ"];
+		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ"];
+		lenisPlosives = ["b", "d", "ɡ"];
+		bilabialPlosives = ["p", "b"];
+		alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠"];
+		velarPlosives = ["k", "ɡ", "ɡ̥"];
+		bilabials = ["p", "b", "m"];
+		alveolars = ["t", "d", "d̥", "n", "l"];
+		velars = ["k", "ɡ", "ŋ"];
+		dentalFricatives = ["θ", "ð"];
+		labiodentalFricatives = ["f", "v"];
+		affricates = ["ʧ", "ʤ"];
+		approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
+		sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
+		nasals = ["m", "n", "ŋ"];
+		vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "ʉ", "ʉ̃", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ə̆"];
+		shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ə̃", "ə̥", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆", "ɒ̆"];
+		frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
+		closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
+		backOpenVowels = ["ɒ", "ɑ", "ɒ̃", "ɑ̃", "ɒ̆"];
+		roundedVowels = ["ɒ", "ɔ", "ʊ", "u", "ɒ̃", "ɔ̃", "ʊ̃", "ũ", "ʉ", "ʉ̃", "ʊ̆", "ɒ̆"];
+		schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
+		reducedVowels = ["u", "i"];
+		lengthMarks = ["ː", "ˑ"];
+		stressMarks = ["ˈ", "ˌ"];
+		syllableBoundary = [".", ","];
+		wordBoundary = [","];
+		ssSymbols = ["ʲ", "ʷ", "ⁿ"];
+	} else {
+		consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
+		obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
+		fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
+		lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
+		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ"];
+		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ"];
+		lenisPlosives = ["b", "d", "ɡ"];
+		bilabialPlosives = ["p", "b"];
+		alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠", "tⁿ", "t̚"];
+		velarPlosives = ["k", "ɡ", "ɡ̥"];
+		bilabials = ["p", "b", "m"];
+		alveolars = ["t", "d", "d̥", "n", "l"];
+		velars = ["k", "ɡ", "ŋ"];
+		dentalFricatives = ["θ", "ð"];
+		labiodentalFricatives = ["f", "v"];
+		affricates = ["ʧ", "ʤ"];
+		approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
+		sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
+		nasals = ["m", "n", "ŋ"];
+		vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ɚ̻", "ɚ̃", "ɚ", "ː"];
+		shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", , "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆"];
+		frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
+		closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
+		backOpenVowels = ["ɑ", "ɑ̃"];
+		roundedVowels = ["o", "ɔ", "ʊ", "u", "ɔ̃", "ʊ̃", "ũ", "ʊ̆"];
+		schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
+		reducedVowels = ["u", "i"];
+		lengthMarks = ["ː", "ˑ"];
+		stressMarks = ["ˈ", "ˌ"];
+		syllableBoundary = [".", ","];
+		wordBoundary = [","];
+		ssSymbols = ["ʲ", "ʷ", "ⁿ"];
+	}
+}
+
+function isSchwa(segment) {
+    if (schwas.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isReducedVowel(segment) {
+    if (reducedVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isConsonant(segment) {
+    if (consonants.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isObstruent(segment) {
+    if (obstruents.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isFortisObstruent(segment) {
+    if (fortisObstruents.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isLenisObstruent(segment) {
+    if (lenisObstruents.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isPlosive(segment) {
+    if (plosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isBilabialPlosive(segment) {
+    if (bilabialPlosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isAlveolarPlosive(segment) {
+    if (alveolarPlosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isVelarPlosive(segment) {
+    if (velarPlosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isVelar(segment) {
+    if (velars.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isBilabial(segment) {
+    if (bilabials.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isFortisPlosive(segment) {
+    if (fortisPlosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isLenisPlosive(segment) {
+    if (lenisPlosives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isDentalFricative(segment) {
+    if (dentalFricatives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isLabiodentalFricative(segment) {
+    if (labiodentalFricatives.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isAlveolar(segment) {
+    if (alveolars.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isApproximant(segment) {
+    if (approximants.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isNasal(segment) {
+    if (nasals.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isSonorant(segment) {
+    if (sonorants.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isVowel(segment) {
+    if (vowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isShortVowel(segment) {
+    if (shortVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+function isOpenBackVowel(segment) {
+    if (backOpenVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isFrontVowel(segment) {
+    if (frontVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isCloseFrontVowel(segment) {
+    if (closeFrontVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isRoundedVowel(segment) {
+    if (roundedVowels.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isLengthMark(segment) {
+    if (lengthMarks.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isStressMark(segment) {
+    if (stressMarks.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isSyllableBoundary(segment) {
+    if (syllableBoundary.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function isWordBoundary(segment) {
+    if (wordBoundary.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+function isSsSymbol(segment) {
+    if (ssSymbols.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function containsSpaces() {
+    if ($("#checkThis").val().indexOf(" " || "	") != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+$("#target").click(function () {
+	input = $("#checkThis").val();
+	result = "";
+    function transcribe() {
+        function removeSpaces() {
+            input = input.replace(/\s+/g, ",");
+            input = input.replace(/\//g, "");
+            input = input.replace(/|/g, "");
+        }
+
+        function removeSchwaBeforeSyllabic() {
+            input = input.replace(/ᵊl/g, "l̩");
+            input = input.replace(/ᵊn/g, "n̩");
+        }
+
+        function replaceSymbols() {
+            input = input.replace(/tʃ/g, "ʧ");
+            input = input.replace(/dʒ/g, "ʤ");
+            input = input.replace(/r/g, "ɹ");
+        }
+
+        function palatalisation() {
+            if (isObstruent(segment) && nextSegment === "j") {
+                segment += "ʲ";
+            } 
+            else if (isObstruent(segment) && isSyllableBoundary(nextSegment) && next2Segment === "j") {
+                segment += "ʲ";
+            } 
+            else if (isObstruent(segment) && isStressMark(nextSegment) && next2Segment === "j") {
+                segment += "ʲ";
+            } 
+            else if (isObstruent(segment) && isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && next3Segment === "j") {
+                segment += "ʲ";
+            } 
+            else if (isNasal(segment)) {
+                if (nextSegment === "j") {
+                    segment += "ʲ";
+                } 
+                else if (isStressMark(nextSegment) && next2Segment === "j") {
+                    segment += "ʲ";
+                } 
+                else if (isStressMark(isSyllableBoundary(nextSegment) && next2Segment) && next3Segment === "j") {
+                    segment += "ʲ";
+                } 
+                else if (nextSegment === "ɪ" && next2Segment === "ə") {
+                    segment += "ʲ";
+                }
+                else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) &&  next3Segment === "ɪ" && next4Segment === "ə") {
+                    segment += "ʲ";
+                } 
+                else {
+                    return segment;
+                }
+            } else {
+                return segment;
+            }
+        }
+
+        function unreleased() {
+            if (isPlosive(segment)) {
+            	if(isPlosive(nextSegment)) {
+                segment += "̚";
+                }
+                else if (isSyllableBoundary(nextSegment) && isPlosive(next2Segment)) {
+                segment += "̚";
+            	}
+            	else if (isStressMark(nextSegment) && isPlosive(next2Segment)) {
+                segment += "̚";
+            	} 
+            	else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isPlosive(next3Segment)) {
+                segment += "̚";
+            	}  
+            	if(i === input.length - 1) {
+                segment += "̚";
+                }
+            	else {
+                	return segment;
+            	} 
+            }
+            else {
+                return segment;
+            }
+        }
+
+        function devoicing() {
+            if (isLenisObstruent(segment)) {
+                if (i === 0 || i === input.length - 1) {
+                    segment += "̥";
+                } 
+                else if (isFortisObstruent(previousSegment) || isFortisObstruent(nextSegment)) {
+                    segment += "̥";
+                } 
+                else if (isSyllableBoundary(previousSegment) && isFortisObstruent(previous2Segment)) {
+                    segment += "̥";
+                }
+                else if (isSyllableBoundary(nextSegment) && isFortisObstruent(next2Segment)) {
+                    segment += "̥";
+                }
+                else if (isStressMark(nextSegment) && isFortisObstruent(next2Segment)) {
+                    segment += "̥";
+                }
+                else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isFortisObstruent(next3Segment)) {
+                    segment += "̥";
+                }
+                else if (isStressMark(previousSegment) && isFortisObstruent(previous2Segment)) {
+                    segment += "̥";
+                }
+                else if (isStressMark(previousSegment) && isSyllableBoundary(previous2Segment) && isFortisObstruent(previous3Segment)) {
+                    segment += "̥";
+                } 
+                else if (isStressMark(previousSegment) && i === 1) {
+                    segment += "̥";
+                }
+                else {
+                    return segment;
+                }
+            } 
+            else if (isApproximant(segment) && isFortisPlosive(previousSegment)) {
+                if (previous2Segment === "ˈ" || i === 1) {
+                    segment += "̥";
+                } else {
+                    return segment;
+                }
+            } 
+            else if (isApproximant(segment) && isSyllableBoundary(previousSegment) && isFortisPlosive(previous2Segment)) {
+                if (previous2Segment === "ˈ" || i === 1) {
+                    segment += "̥";
+                } else {
+                    return segment;
+                }
+            } 
+            else if (isApproximant(segment) && isSsSymbol(previousSegment) && isFortisPlosive(previous2Segment)) {
+                if (previous3Segment === "ˈ" || i === 2) {
+                    segment += "̥";
+                } else {
+                    return segment;
+                }
+            } 
+            else if (isApproximant(segment) && isSsSymbol(previousSegment) && isSyllableBoundary(previous2Segment) && isFortisPlosive(previous3Segment)) {
+                if (previous3Segment === "ˈ" || i === 2) {
+                    segment += "̥";
+                } else {
+                    return segment;
+                }
+            } 
+            else if (isNasal(segment) && previousSegment === "s") {
+                segment += "̥";
+            } 
+            /*else if (isNasal(segment) && isSyllableBoundary(previousSegment) && previous2Segment === "s") {
+                segment += "̥"; 
+            } trzeba zastanowić się nad resztą devoicingu nasals*/
+            else if (segment === "ə" || segment === "ɚ") {
+            	if (i === 0) {
+            		return segment;
+            	}
+            	else if (isFortisObstruent(previousSegment) && isFortisObstruent(nextSegment)) {
+                	segment += "̥";
+                }
+                else if (isFortisObstruent(previous2Segment) && isSyllableBoundary(previousSegment) && isFortisObstruent(nextSegment)) {
+                	segment += "̥";
+                }
+                else if (isFortisObstruent(previousSegment) && isSyllableBoundary(nextSegment) && isFortisObstruent(next2Segment)) {
+                	segment += "̥";
+                }
+            	else if (isFortisObstruent(previousSegment) && isStressMark(nextSegment) && isFortisObstruent(next2Segment)) {
+                	segment += "̥";
+                }
+                else if (isFortisObstruent(previousSegment) && isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isFortisObstruent(next3Segment)) {
+                	segment += "̥";
+                }
+                else if (isFortisObstruent(previous2Segment) && isSyllableBoundary(previousSegment) && isStressMark(nextSegment) && isFortisObstruent(next3Segment)) {
+                	segment += "̥";
+                }
+                else {
+            		return segment;
+            	}
+            } 
+            else {
+                return segment;
+            }
+        }
+
+        function aspiration() {
+            if (isFortisPlosive(segment) && isVowel(nextSegment)) {
+                if (i === 0 && input.indexOf("ˈ") === -1) {
+                    segment += "ʰ";
+                } else if (previousSegment === "ˈ") {
+                    segment += "ʰ";
+                } else {
+                    return segment;
+                }
+            }
+        }
+
+        function glottaling() {
+        	if (accent == "br") {
+	            if (isFortisPlosive(segment)) {
+	                if (i === 0) {
+	                	return segment;
+	                }
+	                if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
+	                    if (isConsonant(nextSegment) || i === input.length - 1) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else {
+	                        return segment;
+	                    }
+	                }  
+	                else {
+	                    return segment;
+	                }
+	            } 
+	            else if (segment === "ʧ") {
+	                    if (isVowel(previousSegment) || isLengthMark(previousSegment)  || isSonorant(previousSegment)) {
+	                        segment = "ʔ" + segment;
+	                    } else {
+	                        return segment;
+	                    }
+	                }
+	            else {
+	                return segment;
+	            }
+	        } else {
+	            if (isFortisPlosive(segment) && isAlveolarPlosive(segment)) {
+	                if (i === 0) {
+	                	return segment;
+	                }
+	                if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
+	                    if (isConsonant(nextSegment)) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
+	                        segment = "ʔ" + segment;
+	                    }
+	                    else {
+	                        return segment;
+	                    }
+	                }  
+	                else {
+	                    return segment;
+	                }
+	            } 
+	            else {
+	                return segment;
+	            }
+	        }
+        }   
+		
+        function phoneticAffricates() {
+            if (isAlveolarPlosive(segment) && nextSegment === "ɹ") {
+                segment += "͜";
+            } 
+            else if (segment === "ʔt" && nextSegment === "s") {
+                segment = "ʔt͜";
+            }
+            else if (segment === "t" && nextSegment === "s") {
+                segment += "͜";
+            }
+            else if (segment === "d" && nextSegment === "z") {
+                segment += "͜";
+            } 
+		}
+		
+        function syllabicity() {
+           /* if (segment === "l" && previousSegment === "ə" && isConsonant(previous2Segment)) {
+                segment += "̩";
+            } else */if (segment === "l" && isConsonant(previousSegment) && i === input.length - 1) {
+                segment += "̩";
+            } else if (segment === "ɫ" && isConsonant(previousSegment) && i === input.length - 1) {
+                segment += "̩";
+            } else if (isNasal(segment) && i === input.length - 1 && isObstruent(previousSegment)) {
+                segment += "̩";
+            } else {
+                return segment;
+            }
+        }
+
+        function syllabicity() {
+           /* if (segment === "l" && previousSegment === "ə" && isConsonant(previous2Segment)) {
+                segment += "̩";
+            } else */if (segment === "l" && isConsonant(previousSegment) && i === input.length - 1) {
+                segment += "̩";
+            } else if (segment === "ɫ" && isConsonant(previousSegment) && i === input.length - 1) {
+                segment += "̩";
+            } else if (isNasal(segment) && i === input.length - 1 && isObstruent(previousSegment)) {
+                segment += "̩";
+            } else {
+                return segment;
+            }
+        }
+        
+        function prefortisClipping() {
+            if (segment === "ː" && isFortisObstruent(nextSegment)) {
+                segment = "ˑ";
+            }
+            else if (isShortVowel(segment) && isFortisObstruent(nextSegment)) {
+                segment += "̆";
+            }
+            else {
+                return segment;
+            }
+        }
+        
+        function velarisation() {
+        	if (accent == "bre") {
+	            if (!isStressMark(nextSegment) && !isVowel(nextSegment) && nextSegment !== "j") {
+	                if (segment === "l") {
+	                    segment = "ɫ";
+	                } 
+	                if (segment === "l̪") {
+	                    segment = "ɫ̪";
+	                } 
+	                else if (segment === "l̩") {
+	                    segment = "l̴̩";
+	                } 
+	                else {
+	                    return segment;
+	                }
+	            }
+	            else if (isSyllableBoundary(nextSegment) && !isStressMark(next2Segment) && !isVowel(next2Segment) && next2Segment !== "j") {
+	                if (segment === "l") {
+	                    segment = "ɫ";
+	                } 
+	                if (segment === "l̪") {
+	                    segment = "ɫ̪";
+	                } 
+	                else if (segment === "l̩") {
+	                    segment = "l̴̩";
+	                } 
+	                else {
+	                    return segment;
+	                }
+	            }
+	            else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && !isVowel(next3Segment) && next3Segment !== "j") {
+	                if (segment === "l") {
+	                    segment = "ɫ";
+	                } 
+	                if (segment === "l̪") {
+	                    segment = "ɫ̪";
+	                } 
+	                else if (segment === "l̩") {
+	                    segment = "l̴̩";
+	                } 
+	                else {
+	                    return segment;
+	                }
+	            }
+	            else if (isStressMark(nextSegment) && !isVowel(next2Segment) && next2Segment !== "j") {
+	                if (segment === "l") {
+	                    segment = "ɫ";
+	                } 
+	                if (segment === "l̪") {
+	                    segment = "ɫ̪";
+	                } 
+	                else if (segment === "l̩") {
+	                    segment = "l̴̩";
+	                } 
+	                else {
+	                    return segment;
+	                }
+	            }
+	            else {
+	                return segment;
+	            }
+	        } else {
+            	if (segment === "l") {
+                    segment = "ɫ";
+                } 
+                if (segment === "l̪") {
+                    segment = "ɫ̪";
+                } 
+                else if (segment === "l̩") {
+                    segment = "l̴̩";
+                }
+            	else if (segment === "l̪") {
+                    segment = "ɫ̪";
+                } 
+                else {
+                    return segment;
+                }	        
+            }
+        }
+        
+        function centralisation() {
+        	if (accent == "bre") {
+	            if (previousSegment ==="j") {
+	            	if (segment === "u") {
+	            		segment ="ʉ";
+	            	}
+	            	else if (segment === "ũ") {
+	            		segment ="ʉ̃";
+	            	}
+	            }
+	            else if (!isVowel(next3Segment) && isLengthMark(nextSegment)) {
+	                if (isFrontVowel(segment) && next2Segment === "l") {
+	                    segment +="̈";
+	                } else if (isFrontVowel(segment) && next2Segment === "l̩") {
+	                    segment +="̈";
+	                } else {
+	                    return segment;
+	                }
+	            } 
+	            else if (!isVowel(next2Segment)) {
+	                if (isFrontVowel(segment) && nextSegment === "l") {
+	                    segment +="̈";
+	                } else if (isFrontVowel(segment) && nextSegment === "l̩") {
+	                    segment +="̈";
+	                } else {
+	                    return segment;
+	                }
+	            } 
+	            else {
+	                return segment;
+	            }
+	        } else {
+            if (!isVowel(next3Segment) && isLengthMark(nextSegment)) {
+                if (isFrontVowel(segment) && next2Segment === "l") {
+                    segment +="̈";
+                } else if (isFrontVowel(segment) && next2Segment === "l̩") {
+                    segment +="̈";
+                } else {
+                    return segment;
+                }
+            } 
+	            else if (!isVowel(next2Segment)) {
+	                if (isFrontVowel(segment) && nextSegment === "l") {
+	                    segment +="̈";
+	                } else if (isFrontVowel(segment) && nextSegment === "l̩") {
+	                    segment +="̈";
+	                } else {
+	                    return segment;
+	                }
+	            } 
+	            else {
+	                return segment;
+	            }
+	        }
+        }
+		
+        /* tutaj skończyłem refaktoryzacje po kropkach*/
+		
+        function labialisation() {
+            if (isConsonant(segment) && segment !=="w" && nextSegment === "w") {
+                segment += "ʷ";
+            } 
+            else if (isConsonant(segment) && segment !=="w" && isRoundedVowel(nextSegment)) {
+                segment += "ʷ";
+            } 
+            else {
+                return segment;
+            }
+        }
+        
+        function nasalPlosion() {
+            if (isBilabialPlosive(segment) && nextSegment === "m") {
+                segment += "ⁿ";
+            } 
+            else if (isBilabialPlosive(segment) && isStressMark(nextSegment) && next2Segment === "m") {
+                segment += "ⁿ";
+            } 
+            else if (isAlveolarPlosive(segment) && nextSegment === "n") {
+                segment += "ⁿ";
+            }
+            else if (isAlveolarPlosive(segment) && isStressMark(nextSegment) && next2Segment === "n") {
+                segment += "ⁿ";
+            }
+            else if (isAlveolarPlosive(segment) && nextSegment === "n̩") {
+                segment += "ⁿ";
+            } 
+             else if (isAlveolarPlosive(segment) && isStressMark(nextSegment) && next2Segment === "n̩") {
+                segment += "ⁿ";
+            } 
+            else if (isVelarPlosive(segment) && nextSegment === "ŋ") {
+                segment += "ⁿ";
+            }
+            else {
+                return segment;
+            }
+        }
+
+        function lateralPlosion() {
+            if (isAlveolarPlosive(segment) && nextSegment === "l") {
+                segment += "ˡ";
+            } 
+            else if (isAlveolarPlosive(segment) && isStressMark(nextSegment) && next2Segment === "l") {
+                segment += "ˡ";
+            } 
+            else {
+                return segment;
+            }
+        }
+
+        function retraction() {
+            if (isAlveolarPlosive(segment) && nextSegment === "ɹ") {
+                segment += "̠";
+            } else if (isVelarPlosive(segment) && isOpenBackVowel(nextSegment)) {
+                segment += "̠";
+            } 
+            else if (isAlveolarPlosive(segment) && isStressMark(nextSegment) && next2Segment === "ɹ") {
+                segment += "̠";
+            } 
+            else if (isVelarPlosive(segment) && isStressMark(nextSegment) && isOpenBackVowel(next2Segment)) {
+                segment += "̠";
+            } else {
+                return segment;
+            }
+        }
+		
+        function dentalisation() {
+            if (isAlveolar(segment) && isDentalFricative(nextSegment)) {
+                segment += "̪";
+            } else {
+                return segment;
+            }
+        }
+
+        function advancing() {
+            if (isVelarPlosive(segment)) {
+                if (isCloseFrontVowel(nextSegment) || nextSegment === "j") {
+                    segment += "̟";
+                } 
+                else if (isStressMark(nextSegment)) {
+                	if (isCloseFrontVowel(next2Segment) || next2Segment === "j") {
+                    	segment += "̟";
+                    }
+                    else {
+                    	return segment;
+                    	}
+                } 
+                else {
+                    return segment;
+                }
+            } else {
+                return segment;
+            }
+        }
+        
+        function labiodentalNasal() {
+            if (isNasal(segment) && isLabiodentalFricative(nextSegment)) {
+                segment = "ɱ";
+            } else {
+                return segment;
+            }
+        }
+
+        function nasalisation() {
+            if (isVowel(segment)) {
+                if (isNasal(nextSegment)) {
+                    segment += "̃";
+                } else if (isLengthMark(nextSegment) && isNasal(next2Segment)) {
+                    segment += "̃";
+                } else if (isStressMark(nextSegment) && isNasal(next2Segment)) {
+                    segment += "̃";
+                } else if (isLengthMark(nextSegment) && isLengthMark(next2Segment) && isNasal(next3Segment)) {
+                    segment += "̃";
+                } else {
+                    return segment;
+                }
+            } else {
+                return segment;
+            }
+        }
+
+        function tapping() {
+        	if (previousSegment === "ɾ̃") {
+        		if (isAlveolarPlosive(segment)) {
+        			segment = "";
+        		}
+        		else {
+                	return segment;
+            	}
+        	}
+        	else if (isVowel(previousSegment) && !isSchwa(previousSegment) && !isReducedVowel(previousSegment)) {
+        		if (isSchwa(nextSegment) || isReducedVowel(nextSegment)) {
+        			if  (isAlveolarPlosive(segment)) {
+        				segment = "ɾ";
+        			}
+        			else {
+                		return segment;
+            		}
+        		}
+        		else if (isSchwa(next2Segment) || isReducedVowel(next2Segment)) {
+        			if (isAlveolarPlosive(nextSegment) || nextSegment === "n") {
+        				if (segment === "n") {
+        					segment = "ɾ̃";
+        				}
+        				else {
+                			return segment;
+            			}
+        			}
+        			else {
+                	return segment;
+            		}
+        		}
+        		else {
+                return segment;
+            	}
+        	}
+        	else {
+                return segment;
+            }
+        }
+        
+        function glottalReplacement() {
+        	result = result.replace(/ʔt͜s/g, "ʔs");
+        	result = result.replace(/ʔtˡ/g, "ʔ");
+        	result = result.replace(/ʔtⁿ/g, "ʔ");
+        	result = result.replace(/ʔt/g, "ʔ");
+        	result = result.replace(/ʔ̚/g, "ʔ");
+		}
+		
+		
+		function devoicedSymbols() {
+        	result = result.replace(/j̥/g, "j̊");
+        	result = result.replace(/ɡ̥/g, "ɡ̊");
+        	result = result.replace(/d͜z̥/g, "d͡z̥");
+        	result = result.replace(/t̠͜ɹ̥/g, "t̠͡ɹ̥");
+		}
+		
+		function keepSpaces() {
+        	if ($('#keepSpaces').attr('checked')) {
+        	result = result.replace(/,/g, " ");
+        	}
+        	else {
+        	result = result.replace(/,/g, "");
+        	}
+		}
+		function removeDots() {
+        	if ($('#removeDots').attr('checked')) {
+        	result = result.replace(/\./g, "");
+        	}
+        	else {
+        	return result;
+        	}
+		}
+        
+        removeSchwaBeforeSyllabic();
+        replaceSymbols();
+        removeSpaces();
+        for (i = 0; i < input.length; i++) {
+            segment = input.substr(i, 1);
+            previousSegment = input.substr(i - 1, 1);
+            previous2Segment = input.substr(i - 2, 1);
+            previous3Segment = input.substr(i - 3, 1);
+            nextSegment = input.substr(i + 1, 1);
+            next2Segment = input.substr(i + 2, 1);
+            next3Segment = input.substr(i + 3, 1);
+            next4Segment = input.substr(i + 4, 1);
+            syllabicity();
+            if ($('#devoicing').attr('checked')) {
+                devoicing();
+            } else {
+                segment = segment;
+            }
+            if ($('#unreleased').attr('checked')) {
+                unreleased();
+            } else {
+                segment = segment;
+            }
+            if ($('#retraction').attr('checked')) {
+                retraction();
+            } else {
+                segment = segment;
+            }
+            if ($('#dentalisation').attr('checked')) {
+                dentalisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#advancing').attr('checked')) {
+                advancing();
+            } else {
+                segment = segment;
+            }
+            if ($('#velarisation').attr('checked')) {
+                velarisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#labiodentalNasal').attr('checked')) {
+                labiodentalNasal();
+            } else {
+                segment = segment;
+            }
+            if ($('#nasalisation').attr('checked')) {
+                nasalisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#prefortisClipping').attr('checked')) {
+                prefortisClipping();
+            } else {
+                segment = segment;
+            }
+            if ($('#centralisation').attr('checked')) {
+                centralisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#palatalisation').attr('checked')) {
+                palatalisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#nasalPlosion').attr('checked')) {
+                nasalPlosion();
+            } else {
+                segment = segment;
+            }
+            if ($('#lateralPlosion').attr('checked')) {
+                lateralPlosion();
+            } else {
+                segment = segment;
+            }
+            if ($('#labialisation').attr('checked')) {
+                labialisation();
+            } else {
+                segment = segment;
+            }
+            if ($('#aspiration').attr('checked')) {
+                aspiration();
+            } else {
+                segment = segment;
+            }
+            if ($('#glottaling').attr('checked')) {
+                glottaling();
+            } else {
+                segment = segment;
+            }
+            if ($('#phoneticAffricates').attr('checked')) {
+            	phoneticAffricates();
+            } else {
+                segment = segment;
+            }
+            if ($('#tapping').attr('checked')) {
+            	tapping();
+            } else {
+                segment = segment;
+            }
+            result += segment;
+        }
+        
+        if (input.length === 0) {
+            $("#result").html('<p class="text-error">Please type some text!</p>');
+        } 
+        if (containsSpaces()) 
+        {
+            $("#result").html('<p class="text-error">This tool works only with single words!</p>');
+        }
+        else {
+        	if ($('#glottalReplacement').attr('checked')) {
+                glottalReplacement();
+            } else {
+                segment = segment;
+            }
+            devoicedSymbols();
+            keepSpaces();
+            removeDots();
+            $("#result").text("[" + result + "]");
+        }
+    }
+    transcribe();
+});
+$('#form').submit(function(){
+	var queryValue = $("input#checkThis").val();
+	var timestamp = new Date();
+    $.ajax({
+        url: "get_query.php",
+        type:'POST',
+        scriptCharset: "utf-8",
+        data: {
+            queryValue: queryValue + " " + timestamp
+        },
+        success: function(msg){
+                console.log("Your query has been saved at " + timestamp);
+                }
+        });
+});
+$("#form").submit(function(e){
+    e.preventDefault();
+});
+
+$accentSwitch.click(function() {
+	assignAccent();
+});
+	
+assignAccent();
