@@ -8,7 +8,7 @@ var lenisPlosives = "";
 var bilabialPlosives = "";
 var alveolarPlosives = "";
 var velarPlosives = "";
-var	bilabials = "";
+var bilabials = "";
 var alveolars = "";
 var velars = "";
 var dentalFricatives = "";
@@ -1171,6 +1171,8 @@ $("#form").submit(function(e){
 
 $accentSwitch.click(function() {
 	assignAccent();
+	assignSegments()
 });
 	
 assignAccent();
+assignSegments()
