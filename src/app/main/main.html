@@ -1,0 +1,72 @@
+<div class="wrapper">
+  <header class="subhead">
+    <div class="container-fluid">
+      <h1>Allophonic transcriptor <span class="muted">Beta</span></h1>
+      <p class="lead">A student's aid in learning allophonic transcription</p>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <p>This transcriptor has been created to help you learn allophonic transcription of simple words in:</p>
+    <ul>
+      <li>British English (Received Pronunciation)</li>
+      <li>American English (General American)</li>
+    </ul> 
+    <p>Use the form below to convert phonemic transcription into narrow phonetic (allophonic) transcription.</p>
+    <p>For the tool to work properly, you need to input the correct phonemic transcription of a word, e.g. <span class="example">/ɪɡˈzɑːmpᵊl/</span> will return <span class="example">[ɪɡˈzɑ̃ːmʔpɫ̩]</span> (BrE) or <span class="example">[ɪɡˈzæ̃ːmʔpɫ̩]</span> (AmE).</p>
+    <p><span class="text-error">This tool works only with single words!</span></p>   
+    <hr>
+    <div class="row-fluid">
+      <div class="span7">
+        <h4>Phonemic transcription (<u>without</u> slanted brackets):</h4>
+        <form id="form" charset="UTF-8">
+          <input type="text" placeholder="Paste text here…" id="checkThis" class="insertHere"/>
+          <button id="target" class="btn" style="vertical-align: top;" type="submit">Submit</button>
+        </form>
+        <p>... or type it using the buttons below:</p>
+        <keyboard></keyboard>
+        <div class="span5">
+          <h4>Show allophonic processes for:</h4>
+          <div class="row-fluid" style="margin-left: 0">
+            <label class="radio"><input type="radio" name="accent" value="bre" checked="checked"/>British English</label>
+            <label class="radio"><input type="radio" name="accent" value="ame"/>American English</label>
+          </div>
+          <h4>Show the following allophonic processes:</h4>
+          <div class="row-fluid" style="margin-left: 0">
+            <div class="span6">
+              <label class="checkbox"><input type="checkbox" checked="checked" id="labialisation"> Labialisation</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="palatalisation"> Palatalisation</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="devoicing"> Devoicing</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="unreleased"> No audible plosion</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="aspiration"> Aspiration</label>
+              <label class="checkbox ame-trait"><input type="checkbox" id="tapping" class="ame-trait"> Tapping</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="glottaling"> Glottal reinforcement</label>
+              <label class="checkbox" style="display: none"><input type="checkbox" id="glottalReplacement"> Glottal replacement</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="dentalisation"> Dentalisation</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="velarisation"> Velarisation</label>
+            </div>
+            <div class="span6">
+              <label class="checkbox"><input type="checkbox" checked="checked" id=nasalPlosion> Nasal plosion</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="lateralPlosion"> Lateral plosion</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="advancing"> Advancing</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="retraction"> Retraction</label>
+              <label class="checkbox" style="display: none"><input type="checkbox" id="phoneticAffricates"> Phonetic affricates</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="centralisation"> Vowel centralisation</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="labiodentalNasal"> Labiodental nasals</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="prefortisClipping"> Pre-fortis clipping</label>
+              <label class="checkbox"><input type="checkbox" checked="checked" id="nasalisation"> Nasalisation</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h4>Phonetic transcription:</h4>
+      <div id="result" class="phon_transcr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container-fluid">
+      <p>Written by <a href="http://wa.amu.edu.pl/wa/aperlinski_grzegorz" target="_blank">Grzegorz Aperliński</a>. Special thanks to <a href="http://wa.amu.edu.pl/wa/lodzikowski_kacper" target="_blank">Kacper Łodzikowski</a>.</p>
+      <p>Email: <a href="mailto:gaperlinski@wa.amu.edu.pl">gaperlinski@wa.amu.edu.pl</a>.</p>
+    </div>
+  </div>
+</div>

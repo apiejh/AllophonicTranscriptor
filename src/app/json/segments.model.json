@@ -1,0 +1,563 @@
+"p": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "bilabial",
+  "isObstruent": true,
+  "isFortis": true
+},
+"b": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "bilabial",
+  "isSonorant": true,
+  "isFortis": false
+},
+"b̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "bilabial",
+  "isSonorant": true,
+  "isFortis": false
+},
+"t": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"tˡ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"d": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"dˡ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"d̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"k": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"k̟": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"k̠": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"ɡ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ɡ̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ɡ̟": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ɡ̠": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "plosive",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"f": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "labiodental",
+  "isObstruent": true,
+  "isFortis": true
+},
+"v": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "labiodental",
+  "isObstruent": true,
+  "isFortis": false
+},
+"v̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "labiodental",
+  "isObstruent": true,
+  "isFortis": false
+},
+"θ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "dental",
+  "isObstruent": true,
+  "isFortis": true
+},
+"ð": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "dental",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ð̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "dental",
+  "isObstruent": true,
+  "isFortis": false
+},
+"s": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"z": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"z̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "alveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ʃ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"ʒ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ʒ̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"h": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "fricative",
+  "poa": "velar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"ʧ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "affricate",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": true
+},
+"ʤ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "affricate",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"ʤ̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "affricate",
+  "poa": "postalveolar",
+  "isObstruent": true,
+  "isFortis": false
+},
+"m": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "nasal",
+  "poa": "bilabial",
+  "isObstruent": false
+}
+"n": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "nasal",
+  "poa": "alveolar",
+  "isObstruent": false
+},
+"ŋ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "nasal",
+  "poa": "velar",
+  "isObstruent": false
+},
+"r": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "approximant",
+  "poa": "postalveolar",
+  "isObstruent": false
+},
+"ɹ̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "approximant",
+  "poa": "postalveolar",
+  "isObstruent": false
+},
+"l": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "lateral approximant",
+  "poa": "alveolar",
+  "isObstruent": false
+},
+"l̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "lateral approximant",
+  "poa": "alveolar",
+  "isObstruent": false
+},
+"ɫ": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "lateral approximant",
+  "poa": "alveolar",
+  "isObstruent": false
+},
+"j": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "approximant",
+  "poa": "palatal",
+  "isObstruent": false
+},
+"j̥": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "approximant",
+  "poa": "palatal",
+  "isObstruent": false
+},
+"w": {
+  "isConsonant": true,
+  "isVowel": false,
+  "moa": "approximant",
+  "poa": "velar",
+  "isObstruent": false
+},
+"ɪ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "front"
+},
+"e": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "mid",
+  "frontness": "front"
+},
+"æ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "front"
+},
+"ʌ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "central"
+},
+"ʊ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "back"
+},
+"i": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "close",
+  "frontness": "front"
+},
+"ɔ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "close",
+  "frontness": "back"
+},
+"ɑ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "open",
+  "frontness": "back"
+},
+"ɜ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "mid",
+  "frontness": "central"
+},
+"u": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "close",
+  "frontness": "back"
+},
+"ə": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ɪ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "front"
+}
+"ẽ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "mid",
+  "frontness": "front"
+},
+"æ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "front"
+},
+"ʌ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "central"
+},
+"ʊ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "back"
+},
+"ĩ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "close",
+  "frontness": "front"
+},
+"ɔ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "close",
+  "frontness": "back"
+},
+"ɑ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "open",
+  "frontness": "back"
+},
+"ɜ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ũ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "close",
+  "frontness": "back"
+},
+"ə̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ə̥": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"a": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "open",
+  "frontness": "central"
+},
+"æ̆": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "open",
+  "frontness": "front"
+},
+"ɪ̆": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "front"
+},
+"ĕ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "mid",
+  "frontness": "front"
+},
+"ʌ̆": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "front"
+},
+"ɒ̆": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "open",
+  "frontness": "back"
+},
+"ʊ̆": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "short",
+  "openness": "close",
+  "frontness": "back"
+},
+"ɚ̻": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ɚ̃": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ɚ": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "reduced",
+  "openness": "mid",
+  "frontness": "central"
+},
+"ː": {
+  "isConsonant": false,
+  "isVowel": true,
+  "length": "long",
+  "openness": "",
+  "frontness": ""
+}
