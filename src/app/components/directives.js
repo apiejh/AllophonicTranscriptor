@@ -11,7 +11,6 @@
       restrict: 'E',
       replace: 'true',
       templateUrl: 'app/components/partials/keyboard.template.html',
-      scope: {},
       link: function($scope, $elem, $attr) {
 
     }
@@ -33,7 +32,6 @@
       restrict: 'E',
       replace: 'true',
       templateUrl: 'app/components/partials/settings.template.html',
-      scope: {},
       link: function($scope, $elem, $attr) {
 
     }
