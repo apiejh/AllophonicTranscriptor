@@ -840,6 +840,13 @@ $("#target").click(function () {
             }
         }
         
+        function goatAllophony() {
+            if (segment === "ə" && nextSegment === "ʊ" && next2Segment === "l") {
+                segment = "ɒ";
+            }
+            return segment;
+        }
+
         /* tutaj skończyłem refaktoryzacje po kropkach*/
         
         function labialisation() {
@@ -1083,6 +1090,12 @@ $("#target").click(function () {
             } else {
                 segment = segment;
             }
+            if ($('#goatAllophony').attr('checked')) {
+                goatAllophony();
+                console.log(1);
+            } else {
+                segment = segment;
+            }
             if ($('#velarisation').attr('checked')) {
                 velarisation();
             } else {
@@ -1183,6 +1196,7 @@ $('#form').submit(function(){
     inputValue = inputValue + ',' + Number($("#lateralPlosion").is(":checked"));
     inputValue = inputValue + ',' + Number($("#advancing").is(":checked"));
     inputValue = inputValue + ',' + Number($("#retraction").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#goatAllophony").is(":checked"));
     inputValue = inputValue + ',' + Number($("#phoneticAffricates").is(":checked"));
     inputValue = inputValue + ',' + Number($("#centralisation").is(":checked"));
     inputValue = inputValue + ',' + Number($("#labiodentalNasal").is(":checked"));
