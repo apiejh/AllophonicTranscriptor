@@ -56,8 +56,8 @@ function assignSegments() {
 		obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
 		fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
 		lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
-		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ"];
-		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ"];
+		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "k̠", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
+		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
 		lenisPlosives = ["b", "d", "ɡ"];
 		bilabialPlosives = ["p", "b"];
 		alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠"];
@@ -682,7 +682,13 @@ $("#target").click(function () {
             if (segment === "ː" && isFortisObstruent(nextSegment)) {
                 segment = "ˑ";
             }
+            else if (segment === "ː" && isNasal(nextSegment) && isFortisObstruent(next2Segment)) {
+                segment = "ˑ";
+            }
             else if (isShortVowel(segment) && isFortisObstruent(nextSegment)) {
+                segment += "̆";
+            }
+            else if (isShortVowel(segment) && isNasal(nextSegment) && isFortisObstruent(next2Segment)) {
                 segment += "̆";
             }
             else {
@@ -1151,19 +1157,29 @@ $("#target").click(function () {
     transcribe();
 });
 $('#form').submit(function(){
-	var queryValue = $("input#checkThis").val();
-	var timestamp = new Date();
-    $.ajax({
-        url: "get_query.php",
-        type:'POST',
-        scriptCharset: "utf-8",
-        data: {
-            queryValue: queryValue + " " + timestamp
-        },
-        success: function(msg){
-                console.log("Your query has been saved at " + timestamp);
-                }
-        });
+	var inputValue = $("#checkThis").val();
+    inputValue = inputValue + ',' + accent;
+    inputValue = inputValue + ',' + Number($("#labialisation").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#palatalisation").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#devoicing").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#unreleased").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#aspiration").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#tapping").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#glottaling").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#glottalReplacement").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#dentalisation").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#nasalPlosion").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#lateralPlosion").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#advancing").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#retraction").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#phoneticAffricates").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#centralisation").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#labiodentalNasal").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#prefortisClipping").is(":checked"));
+    inputValue = inputValue + ',' + Number($("#nasalisation").is(":checked"));
+    var outputValue = $("#result").html();
+    _paq.push(['trackEvent', "logged_text", inputValue, [outputValue]]);
+    console.log("query logged");
 });
 $("#form").submit(function(e){
     e.preventDefault();

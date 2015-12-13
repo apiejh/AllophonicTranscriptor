@@ -7,21 +7,15 @@ color: white;
 -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 box-shadow: 7 1px 10px rgba(0, 0, 0, 0.1);
 }
-
-@font-face {
-  font-family: DoulosSILW;
-  src: url(DoulosSIL-R.woff);
-}
-
 .example {
-    font-family: DoulosSILW;
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
 }
 .text-to-transcribe {
-    font-family: DoulosSILW;
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
     font-size: 2em;
 }
 input[type="text"] {
-    font-family: DoulosSILW;
+    font-family: "Doulos SIL", "Charis SIL", "Times New Roman"; 
 	max-width: 400px;
 }
 .ipa-buttons {
@@ -38,7 +32,7 @@ input[type="text"] {
     padding: 5px 5px;
 }
 .ipa-buttons button {
-    font-family: DoulosSILW;
+    font-family: "Charis SIL", "Doulos SIL"; 
     font-size: 20px;
     width: 1.5em;
     height: 1.5em;
@@ -46,12 +40,6 @@ input[type="text"] {
     line-height: 1em;
     padding: 0px;
 }
-
-.phon_transcr {
-    font-family: DoulosSILW; 
-    font-size: 2em;
-}
-
 #form {
 	margin: 0;
 }
