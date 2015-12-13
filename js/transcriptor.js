@@ -34,90 +34,89 @@ var input = "";
 var result = "";
 var accent = "";
 var $accentSwitch = $("input:radio[name='accent']");
-
 function assignAccent() {
-	accent = $("input:radio[name='accent']:checked").val();
-	if (accent === "bre") {
-		$('.ame-trait').hide();
-		$('.ame-trait').prop('checked', false); 
-		$('.bre-trait').show();
-		$('.bre-trait').prop('checked', true); 
-	} else if (accent === "ame") {
-		$('.bre-trait').hide();
-		$('.bre-trait').prop('checked', false); 
-		$('.ame-trait').show();
-		$('.ame-trait').prop('checked', true); 
-	}
+    accent = $("input:radio[name='accent']:checked").val();
+    if (accent === "bre") {
+        $('.ame-trait').hide();
+        $('.ame-trait').prop('checked', false); 
+        $('.bre-trait').show();
+        $('.bre-trait').prop('checked', true); 
+    } else if (accent === "ame") {
+        $('.bre-trait').hide();
+        $('.bre-trait').prop('checked', false); 
+        $('.ame-trait').show();
+        $('.ame-trait').prop('checked', true); 
+    }
 }
 
 function assignSegments() {
-	if (accent == "bre") {
-		consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
-		obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
-		fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
-		lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
-		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "k̠", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
-		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
-		lenisPlosives = ["b", "d", "ɡ"];
-		bilabialPlosives = ["p", "b"];
-		alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠"];
-		velarPlosives = ["k", "ɡ", "ɡ̥"];
-		bilabials = ["p", "b", "m"];
-		alveolars = ["t", "d", "d̥", "n", "l"];
-		velars = ["k", "ɡ", "ŋ"];
-		dentalFricatives = ["θ", "ð"];
-		labiodentalFricatives = ["f", "v"];
-		affricates = ["ʧ", "ʤ"];
-		approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
-		sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
-		nasals = ["m", "n", "ŋ"];
-		vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "ʉ", "ʉ̃", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ə̆"];
-		shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ə̃", "ə̥", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆", "ɒ̆"];
-		frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
-		closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
-		backOpenVowels = ["ɒ", "ɑ", "ɒ̃", "ɑ̃", "ɒ̆"];
-		roundedVowels = ["ɒ", "ɔ", "ʊ", "u", "ɒ̃", "ɔ̃", "ʊ̃", "ũ", "ʉ", "ʉ̃", "ʊ̆", "ɒ̆"];
-		schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
-		reducedVowels = ["u", "i"];
-		lengthMarks = ["ː", "ˑ"];
-		stressMarks = ["ˈ", "ˌ"];
-		syllableBoundary = [".", ","];
-		wordBoundary = [","];
-		ssSymbols = ["ʲ", "ʷ", "ⁿ"];
-	} else {
-		consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
-		obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
-		fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
-		lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
-		plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ"];
-		fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ"];
-		lenisPlosives = ["b", "d", "ɡ"];
-		bilabialPlosives = ["p", "b"];
-		alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠", "tⁿ", "t̚"];
-		velarPlosives = ["k", "ɡ", "ɡ̥"];
-		bilabials = ["p", "b", "m"];
-		alveolars = ["t", "d", "d̥", "n", "l"];
-		velars = ["k", "ɡ", "ŋ"];
-		dentalFricatives = ["θ", "ð"];
-		labiodentalFricatives = ["f", "v"];
-		affricates = ["ʧ", "ʤ"];
-		approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
-		sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
-		nasals = ["m", "n", "ŋ"];
-		vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ɚ̻", "ɚ̃", "ɚ", "ː"];
-		shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", , "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆"];
-		frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
-		closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
-		backOpenVowels = ["ɑ", "ɑ̃"];
-		roundedVowels = ["o", "ɔ", "ʊ", "u", "ɔ̃", "ʊ̃", "ũ", "ʊ̆"];
-		schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
-		reducedVowels = ["u", "i"];
-		lengthMarks = ["ː", "ˑ"];
-		stressMarks = ["ˈ", "ˌ"];
-		syllableBoundary = [".", ","];
-		wordBoundary = [","];
-		ssSymbols = ["ʲ", "ʷ", "ⁿ"];
-	}
+    if (accent == "bre") {
+        consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
+        obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
+        fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
+        lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
+        plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "k̠", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
+        fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ", "t̠ʷ", "k̠ʷ", "k̠ʷ"];
+        lenisPlosives = ["b", "d", "ɡ"];
+        bilabialPlosives = ["p", "b"];
+        alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠"];
+        velarPlosives = ["k", "ɡ", "ɡ̥"];
+        bilabials = ["p", "b", "m"];
+        alveolars = ["t", "d", "d̥", "n", "l"];
+        velars = ["k", "ɡ", "ŋ"];
+        dentalFricatives = ["θ", "ð"];
+        labiodentalFricatives = ["f", "v"];
+        affricates = ["ʧ", "ʤ"];
+        approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
+        sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
+        nasals = ["m", "n", "ŋ"];
+        vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "ʉ", "ʉ̃", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ə̆"];
+        shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "ɒ", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ɒ̃", "ə̃", "ə̥", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆", "ɒ̆"];
+        frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
+        closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
+        backOpenVowels = ["ɒ", "ɑ", "ɒ̃", "ɑ̃", "ɒ̆"];
+        roundedVowels = ["ɒ", "ɔ", "ʊ", "u", "ɒ̃", "ɔ̃", "ʊ̃", "ũ", "ʉ", "ʉ̃", "ʊ̆", "ɒ̆"];
+        schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
+        reducedVowels = ["u", "i", "ᵊ"];
+        lengthMarks = ["ː", "ˑ"];
+        stressMarks = ["ˈ", "ˌ"];
+        syllableBoundary = [".", ","];
+        wordBoundary = [","];
+        ssSymbols = ["ʲ", "ʷ", "ⁿ"];
+    } else {
+        consonants = ["p", "b", "b̥", "t", "tˡ", "d", "dˡ", "d̥", "k", "k̟", "k̠", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "ð̥", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥", "m", "n", "ŋ", "r", "ɹ̥", "l", "l̥", "ɫ", "j", "j̥", "w"];
+        obstruents = ["p", "b", "b̥", "t", "d", "d̥", "k", "k̟", "ɡ", "ɡ̥", "ɡ̟", "ɡ̠", "f", "v", "v̥", "θ", "ð", "s", "z", "z̥", "ʃ", "ʒ", "ʒ̥", "h", "ʧ", "ʤ", "ʤ̥"];
+        fortisObstruents = ["p", "t", "k", "f", "θ", "s", "ʃ", "h", "ʧ", "t̚", "p̚", "k̚"];
+        lenisObstruents = ["b", "d", "ɡ", "v", "ð", "z", "ʒ", "ʤ"];
+        plosives = ["p", "b", "t", "d", "k", "ɡ", "d̥", "t̠", "d̠", "d̥̠", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ"];
+        fortisPlosives = ["p", "pʲ", "t", "t̠", "tʲ", "k", "kʲ", "tⁿ", "k̚", "t̚", "p̚", "k̟", "k̠", "tʷ", "kʷ", "pʷ", "tˡ", "pⁿ", "kⁿ"];
+        lenisPlosives = ["b", "d", "ɡ"];
+        bilabialPlosives = ["p", "b"];
+        alveolarPlosives = ["t", "d", "d̥", "t̠", "d̠", "d̥̠", "tⁿ", "t̚"];
+        velarPlosives = ["k", "ɡ", "ɡ̥"];
+        bilabials = ["p", "b", "m"];
+        alveolars = ["t", "d", "d̥", "n", "l"];
+        velars = ["k", "ɡ", "ŋ"];
+        dentalFricatives = ["θ", "ð"];
+        labiodentalFricatives = ["f", "v"];
+        affricates = ["ʧ", "ʤ"];
+        approximants = ["ɹ", "l", "l̴", "l̴̩", "w", "j"];
+        sonorants = ["ɹ", "l", "w", "j", "m", "n", "ŋ"];
+        nasals = ["m", "n", "ŋ"];
+        vowels = ["ɪ", "e", "æ", "ʌ", "ʊ", "i", "ɔ", "ɑ", "ɜ", "u", "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ĩ", "ɔ̃", "ɑ̃", "ɜ̃", "ũ", "ə̃", "ə̥", "a", "æ̆", "ɪ̆", "ĕ", "ʌ̆", "ɒ̆", "ʊ̆", "ɚ̻", "ɚ̃", "ɚ", "ː"];
+        shortVowels = ["ɪ", "e", "æ", "ʌ", "ʊ", , "ə", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ʊ̃", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ", "ɪ̆", "ĕ", "æ̆", "ʌ̆", "ʊ̆"];
+        frontVowels = ["ɪ", "e", "æ", "ʌ", "i", "ɪ̃", "ẽ", "æ̃", "ʌ̃", "ĩ"];
+        closeFrontVowels = ["ɪ", "i", "ɪ̃", "ĩ", "ɪ̆"];
+        backOpenVowels = ["ɑ", "ɑ̃"];
+        roundedVowels = ["o", "ɔ", "ʊ", "u", "ɔ̃", "ʊ̃", "ũ", "ʊ̆"];
+        schwas = ["ə", "ə̃", "ə̥", "ɚ̻", "ɚ̃", "ɚ"];
+        reducedVowels = ["u", "i"];
+        lengthMarks = ["ː", "ˑ"];
+        stressMarks = ["ˈ", "ˌ"];
+        syllableBoundary = [".", ","];
+        wordBoundary = [","];
+        ssSymbols = ["ʲ", "ʷ", "ⁿ"];
+    }
 }
 
 function isSchwa(segment) {
@@ -175,6 +174,15 @@ function isPlosive(segment) {
         return false;
     }
 }
+
+function isAffricate(segment) {
+    if (affricates.indexOf(segment) != -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
 
 function isBilabialPlosive(segment) {
     if (bilabialPlosives.indexOf(segment) != -1) {
@@ -371,7 +379,7 @@ function isSsSymbol(segment) {
 }
 
 function containsSpaces() {
-    if ($("#checkThis").val().indexOf(" " || "	") != -1) {
+    if ($("#checkThis").val().indexOf(" " || "  ") != -1) {
         return true;
     } else {
         return false;
@@ -379,8 +387,8 @@ function containsSpaces() {
 }
 
 $("#target").click(function () {
-	input = $("#checkThis").val();
-	result = "";
+    input = $("#checkThis").val();
+    result = "";
     function transcribe() {
         function removeSpaces() {
             input = input.replace(/\s+/g, ",");
@@ -438,24 +446,24 @@ $("#target").click(function () {
 
         function unreleased() {
             if (isPlosive(segment)) {
-            	if(isPlosive(nextSegment)) {
+                if(isPlosive(nextSegment)) {
                 segment += "̚";
                 }
-                else if (isSyllableBoundary(nextSegment) && isPlosive(next2Segment)) {
-                segment += "̚";
-            	}
-            	else if (isStressMark(nextSegment) && isPlosive(next2Segment)) {
-                segment += "̚";
-            	} 
-            	else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isPlosive(next3Segment)) {
-                segment += "̚";
-            	}  
-            	if(i === input.length - 1) {
+                else if(isAffricate(nextSegment)) {
                 segment += "̚";
                 }
-            	else {
-                	return segment;
-            	} 
+                else if (isSyllableBoundary(nextSegment)) {
+                segment += "̚";
+                }
+                else if (isStressMark(nextSegment) && isPlosive(next2Segment)) {
+                segment += "̚";
+                }
+                else if (isStressMark(nextSegment) && isAffricate(next2Segment)) {
+                segment += "̚";
+                }
+                else {
+                    return segment;
+                } 
             }
             else {
                 return segment;
@@ -530,30 +538,30 @@ $("#target").click(function () {
                 segment += "̥"; 
             } trzeba zastanowić się nad resztą devoicingu nasals*/
             else if (segment === "ə" || segment === "ɚ") {
-            	if (i === 0) {
-            		return segment;
-            	}
-            	else if (isFortisObstruent(previousSegment) && isFortisObstruent(nextSegment)) {
-                	segment += "̥";
+                if (i === 0) {
+                    return segment;
+                }
+                else if (isFortisObstruent(previousSegment) && isFortisObstruent(nextSegment)) {
+                    segment += "̥";
                 }
                 else if (isFortisObstruent(previous2Segment) && isSyllableBoundary(previousSegment) && isFortisObstruent(nextSegment)) {
-                	segment += "̥";
+                    segment += "̥";
                 }
                 else if (isFortisObstruent(previousSegment) && isSyllableBoundary(nextSegment) && isFortisObstruent(next2Segment)) {
-                	segment += "̥";
+                    segment += "̥";
                 }
-            	else if (isFortisObstruent(previousSegment) && isStressMark(nextSegment) && isFortisObstruent(next2Segment)) {
-                	segment += "̥";
+                else if (isFortisObstruent(previousSegment) && isStressMark(nextSegment) && isFortisObstruent(next2Segment)) {
+                    segment += "̥";
                 }
                 else if (isFortisObstruent(previousSegment) && isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isFortisObstruent(next3Segment)) {
-                	segment += "̥";
+                    segment += "̥";
                 }
                 else if (isFortisObstruent(previous2Segment) && isSyllableBoundary(previousSegment) && isStressMark(nextSegment) && isFortisObstruent(next3Segment)) {
-                	segment += "̥";
+                    segment += "̥";
                 }
                 else {
-            		return segment;
-            	}
+                    return segment;
+                }
             } 
             else {
                 return segment;
@@ -573,68 +581,68 @@ $("#target").click(function () {
         }
 
         function glottaling() {
-        	if (accent == "br") {
-	            if (isFortisPlosive(segment)) {
-	                if (i === 0) {
-	                	return segment;
-	                }
-	                if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
-	                    if (isConsonant(nextSegment) || i === input.length - 1) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else {
-	                        return segment;
-	                    }
-	                }  
-	                else {
-	                    return segment;
-	                }
-	            } 
-	            else if (segment === "ʧ") {
-	                    if (isVowel(previousSegment) || isLengthMark(previousSegment)  || isSonorant(previousSegment)) {
-	                        segment = "ʔ" + segment;
-	                    } else {
-	                        return segment;
-	                    }
-	                }
-	            else {
-	                return segment;
-	            }
-	        } else {
-	            if (isFortisPlosive(segment) && isAlveolarPlosive(segment)) {
-	                if (i === 0) {
-	                	return segment;
-	                }
-	                if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
-	                    if (isConsonant(nextSegment)) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
-	                        segment = "ʔ" + segment;
-	                    }
-	                    else {
-	                        return segment;
-	                    }
-	                }  
-	                else {
-	                    return segment;
-	                }
-	            } 
-	            else {
-	                return segment;
-	            }
-	        }
+            if (accent == "br") {
+                if (isFortisPlosive(segment)) {
+                    if (i === 0) {
+                        return segment;
+                    }
+                    if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
+                        if (isConsonant(nextSegment) || i === input.length - 1) {
+                            segment = "ʔ" + segment;
+                        }
+                        else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
+                            segment = "ʔ" + segment;
+                        }
+                        else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
+                            segment = "ʔ" + segment;
+                        }
+                        else {
+                            return segment;
+                        }
+                    }  
+                    else {
+                        return segment;
+                    }
+                } 
+                else if (segment === "ʧ") {
+                        if (isVowel(previousSegment) || isLengthMark(previousSegment)  || isSonorant(previousSegment)) {
+                            segment = "ʔ" + segment;
+                        } else {
+                            return segment;
+                        }
+                    }
+                else {
+                    return segment;
+                }
+            } else {
+                if (isFortisPlosive(segment) && isAlveolarPlosive(segment)) {
+                    if (i === 0) {
+                        return segment;
+                    }
+                    if (isVowel(previousSegment) || isLengthMark(previousSegment) || isSonorant(previousSegment)) {
+                        if (isConsonant(nextSegment)) {
+                            segment = "ʔ" + segment;
+                        }
+                        else if (isStressMark(nextSegment) && isConsonant(next2Segment)) {
+                            segment = "ʔ" + segment;
+                        }
+                        else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && isConsonant(next3Segment)) {
+                            segment = "ʔ" + segment;
+                        }
+                        else {
+                            return segment;
+                        }
+                    }  
+                    else {
+                        return segment;
+                    }
+                } 
+                else {
+                    return segment;
+                }
+            }
         }   
-		
+        
         function phoneticAffricates() {
             if (isAlveolarPlosive(segment) && nextSegment === "ɹ") {
                 segment += "͜";
@@ -648,8 +656,8 @@ $("#target").click(function () {
             else if (segment === "d" && nextSegment === "z") {
                 segment += "͜";
             } 
-		}
-		
+        }
+        
         function syllabicity() {
            /* if (segment === "l" && previousSegment === "ə" && isConsonant(previous2Segment)) {
                 segment += "̩";
@@ -697,68 +705,68 @@ $("#target").click(function () {
         }
         
         function velarisation() {
-        	if (accent == "bre") {
-	            if (!isStressMark(nextSegment) && !isVowel(nextSegment) && nextSegment !== "j") {
-	                if (segment === "l") {
-	                    segment = "ɫ";
-	                } 
-	                if (segment === "l̪") {
-	                    segment = "ɫ̪";
-	                } 
-	                else if (segment === "l̩") {
-	                    segment = "l̴̩";
-	                } 
-	                else {
-	                    return segment;
-	                }
-	            }
-	            else if (isSyllableBoundary(nextSegment) && !isStressMark(next2Segment) && !isVowel(next2Segment) && next2Segment !== "j") {
-	                if (segment === "l") {
-	                    segment = "ɫ";
-	                } 
-	                if (segment === "l̪") {
-	                    segment = "ɫ̪";
-	                } 
-	                else if (segment === "l̩") {
-	                    segment = "l̴̩";
-	                } 
-	                else {
-	                    return segment;
-	                }
-	            }
-	            else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && !isVowel(next3Segment) && next3Segment !== "j") {
-	                if (segment === "l") {
-	                    segment = "ɫ";
-	                } 
-	                if (segment === "l̪") {
-	                    segment = "ɫ̪";
-	                } 
-	                else if (segment === "l̩") {
-	                    segment = "l̴̩";
-	                } 
-	                else {
-	                    return segment;
-	                }
-	            }
-	            else if (isStressMark(nextSegment) && !isVowel(next2Segment) && next2Segment !== "j") {
-	                if (segment === "l") {
-	                    segment = "ɫ";
-	                } 
-	                if (segment === "l̪") {
-	                    segment = "ɫ̪";
-	                } 
-	                else if (segment === "l̩") {
-	                    segment = "l̴̩";
-	                } 
-	                else {
-	                    return segment;
-	                }
-	            }
-	            else {
-	                return segment;
-	            }
-	        } else {
-            	if (segment === "l") {
+            if (accent == "bre") {
+                if (!isStressMark(nextSegment) && !isVowel(nextSegment) && nextSegment !== "j") {
+                    if (segment === "l") {
+                        segment = "ɫ";
+                    } 
+                    if (segment === "l̪") {
+                        segment = "ɫ̪";
+                    } 
+                    else if (segment === "l̩") {
+                        segment = "l̴̩";
+                    } 
+                    else {
+                        return segment;
+                    }
+                }
+                else if (isSyllableBoundary(nextSegment) && !isStressMark(next2Segment) && !isVowel(next2Segment) && next2Segment !== "j") {
+                    if (segment === "l") {
+                        segment = "ɫ";
+                    } 
+                    if (segment === "l̪") {
+                        segment = "ɫ̪";
+                    } 
+                    else if (segment === "l̩") {
+                        segment = "l̴̩";
+                    } 
+                    else {
+                        return segment;
+                    }
+                }
+                else if (isSyllableBoundary(nextSegment) && isStressMark(next2Segment) && !isVowel(next3Segment) && next3Segment !== "j") {
+                    if (segment === "l") {
+                        segment = "ɫ";
+                    } 
+                    if (segment === "l̪") {
+                        segment = "ɫ̪";
+                    } 
+                    else if (segment === "l̩") {
+                        segment = "l̴̩";
+                    } 
+                    else {
+                        return segment;
+                    }
+                }
+                else if (isStressMark(nextSegment) && !isVowel(next2Segment) && next2Segment !== "j") {
+                    if (segment === "l") {
+                        segment = "ɫ";
+                    } 
+                    if (segment === "l̪") {
+                        segment = "ɫ̪";
+                    } 
+                    else if (segment === "l̩") {
+                        segment = "l̴̩";
+                    } 
+                    else {
+                        return segment;
+                    }
+                }
+                else {
+                    return segment;
+                }
+            } else {
+                if (segment === "l") {
                     segment = "ɫ";
                 } 
                 if (segment === "l̪") {
@@ -767,47 +775,47 @@ $("#target").click(function () {
                 else if (segment === "l̩") {
                     segment = "l̴̩";
                 }
-            	else if (segment === "l̪") {
+                else if (segment === "l̪") {
                     segment = "ɫ̪";
                 } 
                 else {
                     return segment;
-                }	        
+                }           
             }
         }
         
         function centralisation() {
-        	if (accent == "bre") {
-	            if (previousSegment ==="j") {
-	            	if (segment === "u") {
-	            		segment ="ʉ";
-	            	}
-	            	else if (segment === "ũ") {
-	            		segment ="ʉ̃";
-	            	}
-	            }
-	            else if (!isVowel(next3Segment) && isLengthMark(nextSegment)) {
-	                if (isFrontVowel(segment) && next2Segment === "l") {
-	                    segment +="̈";
-	                } else if (isFrontVowel(segment) && next2Segment === "l̩") {
-	                    segment +="̈";
-	                } else {
-	                    return segment;
-	                }
-	            } 
-	            else if (!isVowel(next2Segment)) {
-	                if (isFrontVowel(segment) && nextSegment === "l") {
-	                    segment +="̈";
-	                } else if (isFrontVowel(segment) && nextSegment === "l̩") {
-	                    segment +="̈";
-	                } else {
-	                    return segment;
-	                }
-	            } 
-	            else {
-	                return segment;
-	            }
-	        } else {
+            if (accent == "bre") {
+                if (previousSegment ==="j") {
+                    if (segment === "u") {
+                        segment ="ʉ";
+                    }
+                    else if (segment === "ũ") {
+                        segment ="ʉ̃";
+                    }
+                }
+                else if (!isVowel(next3Segment) && isLengthMark(nextSegment)) {
+                    if (isFrontVowel(segment) && next2Segment === "l") {
+                        segment +="̈";
+                    } else if (isFrontVowel(segment) && next2Segment === "l̩") {
+                        segment +="̈";
+                    } else {
+                        return segment;
+                    }
+                } 
+                else if (!isVowel(next2Segment)) {
+                    if (isFrontVowel(segment) && nextSegment === "l") {
+                        segment +="̈";
+                    } else if (isFrontVowel(segment) && nextSegment === "l̩") {
+                        segment +="̈";
+                    } else {
+                        return segment;
+                    }
+                } 
+                else {
+                    return segment;
+                }
+            } else {
             if (!isVowel(next3Segment) && isLengthMark(nextSegment)) {
                 if (isFrontVowel(segment) && next2Segment === "l") {
                     segment +="̈";
@@ -817,23 +825,23 @@ $("#target").click(function () {
                     return segment;
                 }
             } 
-	            else if (!isVowel(next2Segment)) {
-	                if (isFrontVowel(segment) && nextSegment === "l") {
-	                    segment +="̈";
-	                } else if (isFrontVowel(segment) && nextSegment === "l̩") {
-	                    segment +="̈";
-	                } else {
-	                    return segment;
-	                }
-	            } 
-	            else {
-	                return segment;
-	            }
-	        }
+                else if (!isVowel(next2Segment)) {
+                    if (isFrontVowel(segment) && nextSegment === "l") {
+                        segment +="̈";
+                    } else if (isFrontVowel(segment) && nextSegment === "l̩") {
+                        segment +="̈";
+                    } else {
+                        return segment;
+                    }
+                } 
+                else {
+                    return segment;
+                }
+            }
         }
-		
+        
         /* tutaj skończyłem refaktoryzacje po kropkach*/
-		
+        
         function labialisation() {
             if (isConsonant(segment) && segment !=="w" && nextSegment === "w") {
                 segment += "ʷ";
@@ -900,7 +908,7 @@ $("#target").click(function () {
                 return segment;
             }
         }
-		
+        
         function dentalisation() {
             if (isAlveolar(segment) && isDentalFricative(nextSegment)) {
                 segment += "̪";
@@ -915,12 +923,12 @@ $("#target").click(function () {
                     segment += "̟";
                 } 
                 else if (isStressMark(nextSegment)) {
-                	if (isCloseFrontVowel(next2Segment) || next2Segment === "j") {
-                    	segment += "̟";
+                    if (isCloseFrontVowel(next2Segment) || next2Segment === "j") {
+                        segment += "̟";
                     }
                     else {
-                    	return segment;
-                    	}
+                        return segment;
+                        }
                 } 
                 else {
                     return segment;
@@ -957,77 +965,80 @@ $("#target").click(function () {
         }
 
         function tapping() {
-        	if (previousSegment === "ɾ̃") {
-        		if (isAlveolarPlosive(segment)) {
-        			segment = "";
-        		}
-        		else {
-                	return segment;
-            	}
-        	}
-        	else if (isVowel(previousSegment) && !isSchwa(previousSegment) && !isReducedVowel(previousSegment)) {
-        		if (isSchwa(nextSegment) || isReducedVowel(nextSegment)) {
-        			if  (isAlveolarPlosive(segment)) {
-        				segment = "ɾ";
-        			}
-        			else {
-                		return segment;
-            		}
-        		}
-        		else if (isSchwa(next2Segment) || isReducedVowel(next2Segment)) {
-        			if (isAlveolarPlosive(nextSegment) || nextSegment === "n") {
-        				if (segment === "n") {
-        					segment = "ɾ̃";
-        				}
-        				else {
-                			return segment;
-            			}
-        			}
-        			else {
-                	return segment;
-            		}
-        		}
-        		else {
+            if (isVowel(previous2Segment) && !isSchwa(previous2Segment) && !isReducedVowel(previous2Segment)) {
+                if (previousSegment = "n" || isAlveolarPlosive(previousSegment)){}
+                    if (isSchwa(nextSegment) || isReducedVowel(nextSegment)) {
+                        if (isAlveolarPlosive(segment)) {
+                            segment = "";
+                        }
+                }
+                else {
+                    return segment;
+                }
+            }
+            else if (isVowel(previousSegment) && !isSchwa(previousSegment) && !isReducedVowel(previousSegment)) {
+                if (isSchwa(nextSegment) || isReducedVowel(nextSegment)) {
+                    if  (isAlveolarPlosive(segment)) {
+                        segment = "ɾ";
+                    }
+                    else {
+                        return segment;
+                    }
+                }
+                else if (isSchwa(next2Segment) || isReducedVowel(next2Segment)) {
+                    if (isAlveolarPlosive(nextSegment) || nextSegment === "n") {
+                        if (segment === "n") {
+                            segment = "ɾ̃";
+                        }
+                        else {
+                            return segment;
+                        }
+                    }
+                    else {
+                    return segment;
+                    }
+                }
+                else {
                 return segment;
-            	}
-        	}
-        	else {
+                }
+            }
+            else {
                 return segment;
             }
         }
         
         function glottalReplacement() {
-        	result = result.replace(/ʔt͜s/g, "ʔs");
-        	result = result.replace(/ʔtˡ/g, "ʔ");
-        	result = result.replace(/ʔtⁿ/g, "ʔ");
-        	result = result.replace(/ʔt/g, "ʔ");
-        	result = result.replace(/ʔ̚/g, "ʔ");
-		}
-		
-		
-		function devoicedSymbols() {
-        	result = result.replace(/j̥/g, "j̊");
-        	result = result.replace(/ɡ̥/g, "ɡ̊");
-        	result = result.replace(/d͜z̥/g, "d͡z̥");
-        	result = result.replace(/t̠͜ɹ̥/g, "t̠͡ɹ̥");
-		}
-		
-		function keepSpaces() {
-        	if ($('#keepSpaces').attr('checked')) {
-        	result = result.replace(/,/g, " ");
-        	}
-        	else {
-        	result = result.replace(/,/g, "");
-        	}
-		}
-		function removeDots() {
-        	if ($('#removeDots').attr('checked')) {
-        	result = result.replace(/\./g, "");
-        	}
-        	else {
-        	return result;
-        	}
-		}
+            result = result.replace(/ʔt͜s/g, "ʔs");
+            result = result.replace(/ʔtˡ/g, "ʔ");
+            result = result.replace(/ʔtⁿ/g, "ʔ");
+            result = result.replace(/ʔt/g, "ʔ");
+            result = result.replace(/ʔ̚/g, "ʔ");
+        }
+        
+        
+        function devoicedSymbols() {
+            result = result.replace(/j̥/g, "j̊");
+            result = result.replace(/ɡ̥/g, "ɡ̊");
+            result = result.replace(/d͜z̥/g, "d͡z̥");
+            result = result.replace(/t̠͜ɹ̥/g, "t̠͡ɹ̥");
+        }
+        
+        function keepSpaces() {
+            if ($('#keepSpaces').attr('checked')) {
+            result = result.replace(/,/g, " ");
+            }
+            else {
+            result = result.replace(/,/g, "");
+            }
+        }
+        function removeDots() {
+            if ($('#removeDots').attr('checked')) {
+            result = result.replace(/\./g, "");
+            }
+            else {
+            return result;
+            }
+        }
         
         removeSchwaBeforeSyllabic();
         replaceSymbols();
@@ -1041,7 +1052,12 @@ $("#target").click(function () {
             next2Segment = input.substr(i + 2, 1);
             next3Segment = input.substr(i + 3, 1);
             next4Segment = input.substr(i + 4, 1);
-            syllabicity();
+            syllabicity();  
+            if ($('#tapping').attr('checked')) {
+                tapping();
+            } else {
+                segment = segment;
+            }
             if ($('#devoicing').attr('checked')) {
                 devoicing();
             } else {
@@ -1123,12 +1139,7 @@ $("#target").click(function () {
                 segment = segment;
             }
             if ($('#phoneticAffricates').attr('checked')) {
-            	phoneticAffricates();
-            } else {
-                segment = segment;
-            }
-            if ($('#tapping').attr('checked')) {
-            	tapping();
+                phoneticAffricates();
             } else {
                 segment = segment;
             }
@@ -1143,7 +1154,7 @@ $("#target").click(function () {
             $("#result").html('<p class="text-error">This tool works only with single words!</p>');
         }
         else {
-        	if ($('#glottalReplacement').attr('checked')) {
+            if ($('#glottalReplacement').attr('checked')) {
                 glottalReplacement();
             } else {
                 segment = segment;
@@ -1157,7 +1168,7 @@ $("#target").click(function () {
     transcribe();
 });
 $('#form').submit(function(){
-	var inputValue = $("#checkThis").val();
+    var inputValue = $("#checkThis").val();
     inputValue = inputValue + ',' + accent;
     inputValue = inputValue + ',' + Number($("#labialisation").is(":checked"));
     inputValue = inputValue + ',' + Number($("#palatalisation").is(":checked"));
@@ -1186,9 +1197,9 @@ $("#form").submit(function(e){
 });
 
 $accentSwitch.click(function() {
-	assignAccent();
-	assignSegments()
+    assignAccent();
+    assignSegments()
 });
-	
+    
 assignAccent();
 assignSegments()
