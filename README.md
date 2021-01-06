@@ -1,5 +1,5 @@
 # Allophonic Transcriptor
-**A JavaScript web app for practising allophonic transcription on single words.**
+**A JavaScript app for practising allophonic transcription on single words.**
 
 Built by **Grzegorz Aperliński**, with help from **Kacper Łodzikowski**.
 
